@@ -1,0 +1,88 @@
+% ======================================================================
+% chart.tex - creates bar charts of benchmark results
+% Copyright (C) 2019-2020 John Neffenger
+%
+% This program is free software: you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation, either version 3 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program.  If not, see <http://www.gnu.org/licenses/>.
+% ======================================================================
+\documentclass[12pt,tikz,border=0.125in]{standalone}
+\usepackage{fontspec}
+\usepackage{pgfplots}
+\setmainfont{Arimo}
+
+% PGFPLOTS options
+\usepgfplotslibrary{colorbrewer}
+\pgfplotsset{compat=newest}
+\pgfplotsset{error bars/.cd,x dir=both,x explicit}
+\pgfplotsset{table/x=Score,table/y=Benchmark}
+\pgfplotsset{table/x error plus=Error,table/x error minus=Error}
+
+% Subtitle values
+\newcommand{\armfocal}{QEMU armv7l virtual machine with 1 CPU and 1 GiB of RAM}
+\newcommand{\clarahd}{1.0 GHz i.MX6SLL ARM Cortex-A9 with 512 MiB of RAM}
+\newcommand{\touchc}{800 MHz i.MX507 ARM Cortex-A8 with 256 MiB of RAM}
+
+% Default values
+\providecommand{\mytitle}{Title}
+\providecommand{\mysubtitle}{Subtitle}
+\providecommand{\legendpos}{at={(0.95,0.95)},anchor=north east}
+\providecommand{\benchmarks}{
+    copyTo08,
+    copyTo16,
+    copyTo32,
+    writeTo08,
+    writeTo16,
+    writeTo32,
+}
+\providecommand{\colorold}{Paired-A}
+\providecommand{\colornew}{Paired-B}
+
+% Data files
+\newcommand{\dataold}{tmp/\jobname-old.dat}
+\newcommand{\datanew}{tmp/\jobname-new.dat}
+
+% PDF metadata
+\pdfinfo{
+    /Title (\mytitle)
+    /Subject (\mysubtitle)
+    /Author (John Neffenger)
+    /Keywords (JMH, JavaFX, Glass, Monocle, Framebuffer, FramebufferY8)
+}
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    title=\mytitle\\\small{\mysubtitle},
+    title style={align=center},
+    width=6in,
+    height=3in,
+    scale only axis,
+    enlarge y limits=0.15,
+    xbar,
+    xmin=0,
+    reverse legend,
+    legend cell align=left,
+    legend style={\legendpos,fill=none,column sep=1ex},
+    xlabel=Throughput (frames per second),
+    x tick label style={/pgf/number format/assume math mode},
+    y dir=reverse,
+    ytick pos=left,
+    ytick/.expand once = \benchmarks,
+    symbolic y coords/.expand once = \benchmarks,
+]
+\addplot[fill=\colorold] table{\dataold};
+\addplot[fill=\colornew] table{\datanew};
+\legend{Framebuffer,FramebufferY8}
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,3 +1,10 @@
+# NetBeans generated files
 /nbactions.xml
 /target/
-/doc/
+
+# LaTeX output
+/images/tmp/
+/images/out/
+
+# Jekyll output
+/docs/_site/

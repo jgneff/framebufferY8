@@ -4,18 +4,18 @@ The benchmarks test the methods that copy a 32-bit source image in ARGB32 pixel 
 
 ## Results
 
-The results of running the benchmarks on my systems are published on the [website associated with this repository](https://jgneff.github.io/framebufferY8).
+The results of running the benchmarks on my systems are published on the [website associated with this repository](https://jgneff.github.io/framebufferY8/).
 
 ## Licenses
 
-This project is licensed under the [GNU General Public License v3.0](https://choosealicense.com/licenses/gpl-3.0/) except for the following files, which are licensed by Oracle under the [GNU General Public License v2.0](src/main/java/com/sun/glass/ui/monocle/LICENSE) with the [Classpath Exception](src/main/java/com/sun/glass/ui/monocle/ADDITIONAL_LICENSE_INFO):
+This project is licensed under the [GNU General Public License v3.0](LICENSE) except for the following files, which are licensed by Oracle under the [GNU General Public License v2.0](src/main/java/com/sun/glass/ui/monocle/LICENSE) with the [Classpath Exception](src/main/java/com/sun/glass/ui/monocle/ADDITIONAL_LICENSE_INFO):
 
 * [Framebuffer.java](src/main/java/com/sun/glass/ui/monocle/Framebuffer.java)
 * [FramebufferY8.java](src/main/java/com/sun/glass/ui/monocle/FramebufferY8.java)
 * [PlatformLogger.java](src/main/java/com/sun/javafx/logging/PlatformLogger.java)
 * [Logging.java](src/main/java/com/sun/javafx/util/Logging.java)
 
-The contents of the [website](https://jgneff.github.io/framebufferY8) associated with this project are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
+The contents of the [website](https://jgneff.github.io/framebufferY8/) associated with this project are licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/).
 The website style is based on [Water.css](https://github.com/kognise/water.css).
 
 ## Building

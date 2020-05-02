@@ -16,6 +16,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 # ======================================================================
 
+SHELL = /bin/bash
+
 # Directories of log files and public website
 logdir = ../logs
 webdir = ../docs
@@ -64,12 +66,17 @@ sed_table += -e "s/Score[ ]\+Error/Score ± Error/"
 sed_table += -e "s/[ ]\+/ | /g"
 sed_table += -e "s/^Benchmarks\.//"
 
+# Sed scripts to create Markdown pipe tables from the PGFPLOTS data files
+sed_pgfnew := -e '/^Benchmark/d' -e 's/JDK\(1.\) /JDK\1New /'
+sed_pgfold := -e '/^Benchmark/d' -e 's/JDK\(1.\) /JDK\1Old /'
+
 # Sed scripts to edit the XMP metadata for the SVG files
 sed_xmp := -e "s/x:xmpmeta.*>/metadata>/"
 
 # Lists of sources
 tex_list := $(notdir $(basename $(wildcard src/*.tex)))
 log_list := $(notdir $(basename $(wildcard $(logdir)/*.log)))
+dat_list := $(subst -new,,$(notdir $(basename $(wildcard src/*-new.dat))))
 
 # Lists of image targets
 pdf_list := $(addsuffix .pdf,$(tex_list))
@@ -86,7 +93,7 @@ img_list := $(addprefix out/,$(pdf_list) $(png_list) $(svg_list))
 # ======================================================================
 
 # Lists of Markdown targets
-md_all   := $(addprefix out/,$(addsuffix .md,$(log_list)))
+md_all   := $(addprefix out/,$(addsuffix .md,$(log_list) $(dat_list)))
 md_bad   := $(foreach f,$(md_all),$(if $(findstring +,$f),$f,))
 md_good  := $(filter-out $(md_bad),$(md_all))
 md_fixed := $(foreach f,$(md_bad),$(subst +,_,$f))
@@ -146,6 +153,15 @@ out/%.svg: tmp/%-clean.svg tmp/metadata.xml
 out/%.md: $(logdir)/%.log | out
 	grep $(results) $< | sed $(sed_table) > $@
 
+tmp/%.md: src/%-new.dat src/%-old.dat
+	paste -d '\n' \
+        <(cat $(word 1,$^) | sed $(sed_pgfnew)) \
+        <(cat $(word 2,$^) | sed $(sed_pgfold)) \
+        | tr -s ' ' | sed 's/ / | /g' > $@
+
+out/%.md: tmp/%.md header.md
+	cat header.md $< > $@
+
 # ======================================================================
 # Explicit rules
 # ======================================================================
@@ -170,6 +186,7 @@ list: $(img_list)
 pub:
 	$(call publish,*.md,_includes)
 	$(call publish,*2019-12-??.png *2019-12-??.svg,2019-12)
+	$(call publish,*2020-04-??.png *2020-04-??.svg,2020-04)
 
 clean:
 	rm -f tmp/* out/*

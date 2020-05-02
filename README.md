@@ -24,8 +24,8 @@ This is a Maven project that depends on the [Java Microbenchmark Harness](https:
 You can build and package the application as the file *target/benchmarks.jar* with the commands:
 
 ```console
-john@tower:~/src/framebufferY8$ export JAVA_HOME=$HOME/opt/jdk-13.0.2
-john@tower:~/src/framebufferY8$ mvn package
+$ export JAVA_HOME=$HOME/opt/jdk-14.0.1
+$ mvn package
 ```
 
 ## Running
@@ -34,7 +34,7 @@ When the benchmark mode is *SingleShotTime* (ss), the tests save the contents of
 Run the tests in this mode with the command:
 
 ```console
-ubuntu@clarahd:~$ java -jar target/benchmarks.jar -f 1 -bm ss
+$ java -jar target/benchmarks.jar -f 1 -bm ss
 ```
 
 The source image depends on the value of the benchmark *type* parameter as follows:
@@ -52,7 +52,7 @@ The default value of the *type* parameter is *color*.
 Change the *type* to *large*, for example, with the command:
 
 ```console
-ubuntu@clarahd:~$ java -jar target/benchmarks.jar -p type=large
+$ java -jar target/benchmarks.jar -p type=large
 ```
 
 Use the Bash script [*bin/compare.sh*](bin/compare.sh) to compare the images created by the new `FramebufferY8` class with those created by the old `Framebuffer` class.

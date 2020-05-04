@@ -187,6 +187,7 @@ pub:
 	$(call publish,*.md,_includes)
 	$(call publish,*2019-12-??.png *2019-12-??.svg,2019-12)
 	$(call publish,*2020-04-??.png *2020-04-??.svg,2020-04)
+	$(call publish,*2020-05-??.png *2020-05-??.svg,2020-05)
 
 clean:
 	rm -f tmp/* out/*

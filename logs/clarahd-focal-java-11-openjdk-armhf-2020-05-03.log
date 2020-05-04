@@ -1,0 +1,859 @@
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.copyTo08New
+# Parameters: (type = large)
+
+# Run progress: 0.00% complete, ETA 01:23:20
+# Fork: 1 of 5
+# Warmup Iteration   1: 9.642 ops/s
+# Warmup Iteration   2: 9.521 ops/s
+# Warmup Iteration   3: 9.652 ops/s
+# Warmup Iteration   4: 9.648 ops/s
+# Warmup Iteration   5: 9.663 ops/s
+Iteration   1: 9.657 ops/s
+Iteration   2: 9.630 ops/s
+Iteration   3: 9.662 ops/s
+Iteration   4: 9.658 ops/s
+Iteration   5: 9.643 ops/s
+
+# Run progress: 2.00% complete, ETA 01:27:01
+# Fork: 2 of 5
+# Warmup Iteration   1: 9.643 ops/s
+# Warmup Iteration   2: 9.632 ops/s
+# Warmup Iteration   3: 9.640 ops/s
+# Warmup Iteration   4: 9.649 ops/s
+# Warmup Iteration   5: 9.640 ops/s
+Iteration   1: 9.649 ops/s
+Iteration   2: 9.641 ops/s
+Iteration   3: 9.642 ops/s
+Iteration   4: 9.625 ops/s
+Iteration   5: 9.650 ops/s
+
+# Run progress: 4.00% complete, ETA 01:24:44
+# Fork: 3 of 5
+# Warmup Iteration   1: 9.709 ops/s
+# Warmup Iteration   2: 9.703 ops/s
+# Warmup Iteration   3: 9.701 ops/s
+# Warmup Iteration   4: 9.716 ops/s
+# Warmup Iteration   5: 9.718 ops/s
+Iteration   1: 9.704 ops/s
+Iteration   2: 9.720 ops/s
+Iteration   3: 9.707 ops/s
+Iteration   4: 9.685 ops/s
+Iteration   5: 9.714 ops/s
+
+# Run progress: 6.00% complete, ETA 01:22:55
+# Fork: 4 of 5
+# Warmup Iteration   1: 9.628 ops/s
+# Warmup Iteration   2: 9.639 ops/s
+# Warmup Iteration   3: 9.649 ops/s
+# Warmup Iteration   4: 9.636 ops/s
+# Warmup Iteration   5: 9.649 ops/s
+Iteration   1: 9.637 ops/s
+Iteration   2: 9.640 ops/s
+Iteration   3: 9.647 ops/s
+Iteration   4: 9.647 ops/s
+Iteration   5: 9.634 ops/s
+
+# Run progress: 8.00% complete, ETA 01:21:02
+# Fork: 5 of 5
+# Warmup Iteration   1: 9.643 ops/s
+# Warmup Iteration   2: 9.635 ops/s
+# Warmup Iteration   3: 9.642 ops/s
+# Warmup Iteration   4: 9.639 ops/s
+# Warmup Iteration   5: 9.634 ops/s
+Iteration   1: 9.646 ops/s
+Iteration   2: 9.634 ops/s
+Iteration   3: 9.635 ops/s
+Iteration   4: 9.648 ops/s
+Iteration   5: 9.643 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.copyTo08New":
+  9.656 ±(99.9%) 0.021 ops/s [Average]
+  (min, avg, max) = (9.625, 9.656, 9.720), stdev = 0.028
+  CI (99.9%): [9.635, 9.677] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.copyTo16New
+# Parameters: (type = large)
+
+# Run progress: 10.00% complete, ETA 01:19:12
+# Fork: 1 of 5
+# Warmup Iteration   1: 11.523 ops/s
+# Warmup Iteration   2: 12.050 ops/s
+# Warmup Iteration   3: 12.056 ops/s
+# Warmup Iteration   4: 12.083 ops/s
+# Warmup Iteration   5: 12.089 ops/s
+Iteration   1: 12.077 ops/s
+Iteration   2: 12.087 ops/s
+Iteration   3: 12.083 ops/s
+Iteration   4: 12.058 ops/s
+Iteration   5: 12.084 ops/s
+
+# Run progress: 12.00% complete, ETA 01:17:25
+# Fork: 2 of 5
+# Warmup Iteration   1: 11.571 ops/s
+# Warmup Iteration   2: 12.092 ops/s
+# Warmup Iteration   3: 12.099 ops/s
+# Warmup Iteration   4: 12.085 ops/s
+# Warmup Iteration   5: 12.090 ops/s
+Iteration   1: 12.108 ops/s
+Iteration   2: 12.089 ops/s
+Iteration   3: 12.105 ops/s
+Iteration   4: 12.103 ops/s
+Iteration   5: 12.080 ops/s
+
+# Run progress: 14.00% complete, ETA 01:15:37
+# Fork: 3 of 5
+# Warmup Iteration   1: 11.563 ops/s
+# Warmup Iteration   2: 12.099 ops/s
+# Warmup Iteration   3: 12.089 ops/s
+# Warmup Iteration   4: 12.099 ops/s
+# Warmup Iteration   5: 12.101 ops/s
+Iteration   1: 12.077 ops/s
+Iteration   2: 12.101 ops/s
+Iteration   3: 12.105 ops/s
+Iteration   4: 12.091 ops/s
+Iteration   5: 12.096 ops/s
+
+# Run progress: 16.00% complete, ETA 01:13:49
+# Fork: 4 of 5
+# Warmup Iteration   1: 11.530 ops/s
+# Warmup Iteration   2: 12.016 ops/s
+# Warmup Iteration   3: 12.092 ops/s
+# Warmup Iteration   4: 12.074 ops/s
+# Warmup Iteration   5: 12.090 ops/s
+Iteration   1: 12.097 ops/s
+Iteration   2: 12.079 ops/s
+Iteration   3: 12.098 ops/s
+Iteration   4: 12.095 ops/s
+Iteration   5: 12.084 ops/s
+
+# Run progress: 18.00% complete, ETA 01:12:01
+# Fork: 5 of 5
+# Warmup Iteration   1: 14.621 ops/s
+# Warmup Iteration   2: 15.684 ops/s
+# Warmup Iteration   3: 15.690 ops/s
+# Warmup Iteration   4: 15.706 ops/s
+# Warmup Iteration   5: 15.695 ops/s
+Iteration   1: 15.710 ops/s
+Iteration   2: 15.702 ops/s
+Iteration   3: 15.694 ops/s
+Iteration   4: 15.685 ops/s
+Iteration   5: 15.703 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.copyTo16New":
+  12.812 ±(99.9%) 1.104 ops/s [Average]
+  (min, avg, max) = (12.058, 12.812, 15.710), stdev = 1.473
+  CI (99.9%): [11.708, 13.915] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.copyTo16Old
+# Parameters: (type = large)
+
+# Run progress: 20.00% complete, ETA 01:10:15
+# Fork: 1 of 5
+# Warmup Iteration   1: 9.871 ops/s
+# Warmup Iteration   2: 10.213 ops/s
+# Warmup Iteration   3: 10.202 ops/s
+# Warmup Iteration   4: 10.206 ops/s
+# Warmup Iteration   5: 10.221 ops/s
+Iteration   1: 10.210 ops/s
+Iteration   2: 10.222 ops/s
+Iteration   3: 10.220 ops/s
+Iteration   4: 10.215 ops/s
+Iteration   5: 10.215 ops/s
+
+# Run progress: 22.00% complete, ETA 01:08:29
+# Fork: 2 of 5
+# Warmup Iteration   1: 9.670 ops/s
+# Warmup Iteration   2: 9.996 ops/s
+# Warmup Iteration   3: 9.998 ops/s
+# Warmup Iteration   4: 9.979 ops/s
+# Warmup Iteration   5: 9.995 ops/s
+Iteration   1: 9.977 ops/s
+Iteration   2: 9.899 ops/s
+Iteration   3: 9.989 ops/s
+Iteration   4: 9.989 ops/s
+Iteration   5: 9.978 ops/s
+
+# Run progress: 24.00% complete, ETA 01:06:42
+# Fork: 3 of 5
+# Warmup Iteration   1: 9.871 ops/s
+# Warmup Iteration   2: 10.219 ops/s
+# Warmup Iteration   3: 10.209 ops/s
+# Warmup Iteration   4: 10.218 ops/s
+# Warmup Iteration   5: 10.211 ops/s
+Iteration   1: 10.223 ops/s
+Iteration   2: 10.210 ops/s
+Iteration   3: 10.203 ops/s
+Iteration   4: 10.223 ops/s
+Iteration   5: 10.217 ops/s
+
+# Run progress: 26.00% complete, ETA 01:04:56
+# Fork: 4 of 5
+# Warmup Iteration   1: 9.681 ops/s
+# Warmup Iteration   2: 9.997 ops/s
+# Warmup Iteration   3: 9.995 ops/s
+# Warmup Iteration   4: 9.987 ops/s
+# Warmup Iteration   5: 10.001 ops/s
+Iteration   1: 10.001 ops/s
+Iteration   2: 9.994 ops/s
+Iteration   3: 10.004 ops/s
+Iteration   4: 9.980 ops/s
+Iteration   5: 10.001 ops/s
+
+# Run progress: 28.00% complete, ETA 01:03:10
+# Fork: 5 of 5
+# Warmup Iteration   1: 9.873 ops/s
+# Warmup Iteration   2: 10.196 ops/s
+# Warmup Iteration   3: 10.218 ops/s
+# Warmup Iteration   4: 10.209 ops/s
+# Warmup Iteration   5: 10.206 ops/s
+Iteration   1: 10.222 ops/s
+Iteration   2: 10.224 ops/s
+Iteration   3: 10.220 ops/s
+Iteration   4: 10.224 ops/s
+Iteration   5: 10.219 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.copyTo16Old":
+  10.123 ±(99.9%) 0.090 ops/s [Average]
+  (min, avg, max) = (9.899, 10.123, 10.224), stdev = 0.120
+  CI (99.9%): [10.033, 10.213] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.copyTo32New
+# Parameters: (type = large)
+
+# Run progress: 30.00% complete, ETA 01:01:25
+# Fork: 1 of 5
+# Warmup Iteration   1: 91.918 ops/s
+# Warmup Iteration   2: 91.993 ops/s
+# Warmup Iteration   3: 91.781 ops/s
+# Warmup Iteration   4: 91.999 ops/s
+# Warmup Iteration   5: 92.064 ops/s
+Iteration   1: 91.637 ops/s
+Iteration   2: 92.279 ops/s
+Iteration   3: 92.240 ops/s
+Iteration   4: 92.063 ops/s
+Iteration   5: 92.206 ops/s
+
+# Run progress: 32.00% complete, ETA 00:59:39
+# Fork: 2 of 5
+# Warmup Iteration   1: 112.558 ops/s
+# Warmup Iteration   2: 112.853 ops/s
+# Warmup Iteration   3: 112.883 ops/s
+# Warmup Iteration   4: 112.885 ops/s
+# Warmup Iteration   5: 112.992 ops/s
+Iteration   1: 113.401 ops/s
+Iteration   2: 113.065 ops/s
+Iteration   3: 113.492 ops/s
+Iteration   4: 115.823 ops/s
+Iteration   5: 149.265 ops/s
+
+# Run progress: 34.00% complete, ETA 00:57:52
+# Fork: 3 of 5
+# Warmup Iteration   1: 93.069 ops/s
+# Warmup Iteration   2: 92.947 ops/s
+# Warmup Iteration   3: 92.983 ops/s
+# Warmup Iteration   4: 92.976 ops/s
+# Warmup Iteration   5: 92.736 ops/s
+Iteration   1: 92.762 ops/s
+Iteration   2: 93.133 ops/s
+Iteration   3: 90.485 ops/s
+Iteration   4: 93.021 ops/s
+Iteration   5: 93.153 ops/s
+
+# Run progress: 36.00% complete, ETA 00:56:06
+# Fork: 4 of 5
+# Warmup Iteration   1: 92.147 ops/s
+# Warmup Iteration   2: 92.248 ops/s
+# Warmup Iteration   3: 92.147 ops/s
+# Warmup Iteration   4: 92.122 ops/s
+# Warmup Iteration   5: 92.214 ops/s
+Iteration   1: 91.946 ops/s
+Iteration   2: 92.488 ops/s
+Iteration   3: 92.409 ops/s
+Iteration   4: 92.304 ops/s
+Iteration   5: 92.504 ops/s
+
+# Run progress: 38.00% complete, ETA 00:54:20
+# Fork: 5 of 5
+# Warmup Iteration   1: 93.202 ops/s
+# Warmup Iteration   2: 93.103 ops/s
+# Warmup Iteration   3: 91.812 ops/s
+# Warmup Iteration   4: 93.130 ops/s
+# Warmup Iteration   5: 92.894 ops/s
+Iteration   1: 92.871 ops/s
+Iteration   2: 93.201 ops/s
+Iteration   3: 93.343 ops/s
+Iteration   4: 93.222 ops/s
+Iteration   5: 93.184 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.copyTo32New":
+  98.220 ±(99.9%) 9.977 ops/s [Average]
+  (min, avg, max) = (90.485, 98.220, 149.265), stdev = 13.320
+  CI (99.9%): [88.242, 108.197] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.copyTo32Old
+# Parameters: (type = large)
+
+# Run progress: 40.00% complete, ETA 00:52:35
+# Fork: 1 of 5
+# Warmup Iteration   1: 92.709 ops/s
+# Warmup Iteration   2: 92.678 ops/s
+# Warmup Iteration   3: 92.517 ops/s
+# Warmup Iteration   4: 92.717 ops/s
+# Warmup Iteration   5: 92.391 ops/s
+Iteration   1: 92.454 ops/s
+Iteration   2: 92.856 ops/s
+Iteration   3: 92.944 ops/s
+Iteration   4: 92.807 ops/s
+Iteration   5: 92.962 ops/s
+
+# Run progress: 42.00% complete, ETA 00:50:49
+# Fork: 2 of 5
+# Warmup Iteration   1: 98.661 ops/s
+# Warmup Iteration   2: 98.858 ops/s
+# Warmup Iteration   3: 98.597 ops/s
+# Warmup Iteration   4: 98.510 ops/s
+# Warmup Iteration   5: 98.611 ops/s
+Iteration   1: 98.844 ops/s
+Iteration   2: 98.881 ops/s
+Iteration   3: 99.001 ops/s
+Iteration   4: 98.825 ops/s
+Iteration   5: 98.332 ops/s
+
+# Run progress: 44.00% complete, ETA 00:49:03
+# Fork: 3 of 5
+# Warmup Iteration   1: 95.259 ops/s
+# Warmup Iteration   2: 95.164 ops/s
+# Warmup Iteration   3: 95.223 ops/s
+# Warmup Iteration   4: 95.104 ops/s
+# Warmup Iteration   5: 94.984 ops/s
+Iteration   1: 95.168 ops/s
+Iteration   2: 95.440 ops/s
+Iteration   3: 95.306 ops/s
+Iteration   4: 95.458 ops/s
+Iteration   5: 95.305 ops/s
+
+# Run progress: 46.00% complete, ETA 00:47:17
+# Fork: 4 of 5
+# Warmup Iteration   1: 95.372 ops/s
+# Warmup Iteration   2: 95.505 ops/s
+# Warmup Iteration   3: 95.401 ops/s
+# Warmup Iteration   4: 95.451 ops/s
+# Warmup Iteration   5: 95.497 ops/s
+Iteration   1: 95.060 ops/s
+Iteration   2: 95.699 ops/s
+Iteration   3: 95.746 ops/s
+Iteration   4: 95.611 ops/s
+Iteration   5: 95.728 ops/s
+
+# Run progress: 48.00% complete, ETA 00:45:31
+# Fork: 5 of 5
+# Warmup Iteration   1: 111.059 ops/s
+# Warmup Iteration   2: 110.981 ops/s
+# Warmup Iteration   3: 111.171 ops/s
+# Warmup Iteration   4: 111.041 ops/s
+# Warmup Iteration   5: 110.814 ops/s
+Iteration   1: 111.458 ops/s
+Iteration   2: 111.134 ops/s
+Iteration   3: 111.492 ops/s
+Iteration   4: 110.621 ops/s
+Iteration   5: 144.667 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.copyTo32Old":
+  100.072 ±(99.9%) 8.332 ops/s [Average]
+  (min, avg, max) = (92.454, 100.072, 144.667), stdev = 11.123
+  CI (99.9%): [91.740, 108.404] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.writeTo08New
+# Parameters: (type = large)
+
+# Run progress: 50.00% complete, ETA 00:43:46
+# Fork: 1 of 5
+# Warmup Iteration   1: 8.364 ops/s
+# Warmup Iteration   2: 8.706 ops/s
+# Warmup Iteration   3: 8.698 ops/s
+# Warmup Iteration   4: 8.724 ops/s
+# Warmup Iteration   5: 8.725 ops/s
+Iteration   1: 8.711 ops/s
+Iteration   2: 8.726 ops/s
+Iteration   3: 8.727 ops/s
+Iteration   4: 8.699 ops/s
+Iteration   5: 8.722 ops/s
+
+# Run progress: 52.00% complete, ETA 00:42:01
+# Fork: 2 of 5
+# Warmup Iteration   1: 8.352 ops/s
+# Warmup Iteration   2: 8.717 ops/s
+# Warmup Iteration   3: 8.723 ops/s
+# Warmup Iteration   4: 8.702 ops/s
+# Warmup Iteration   5: 8.722 ops/s
+Iteration   1: 8.720 ops/s
+Iteration   2: 8.708 ops/s
+Iteration   3: 8.718 ops/s
+Iteration   4: 8.719 ops/s
+Iteration   5: 8.699 ops/s
+
+# Run progress: 54.00% complete, ETA 00:40:17
+# Fork: 3 of 5
+# Warmup Iteration   1: 8.357 ops/s
+# Warmup Iteration   2: 8.704 ops/s
+# Warmup Iteration   3: 8.723 ops/s
+# Warmup Iteration   4: 8.719 ops/s
+# Warmup Iteration   5: 8.709 ops/s
+Iteration   1: 8.712 ops/s
+Iteration   2: 8.721 ops/s
+Iteration   3: 8.710 ops/s
+Iteration   4: 8.723 ops/s
+Iteration   5: 8.720 ops/s
+
+# Run progress: 56.00% complete, ETA 00:38:32
+# Fork: 4 of 5
+# Warmup Iteration   1: 8.360 ops/s
+# Warmup Iteration   2: 8.717 ops/s
+# Warmup Iteration   3: 8.708 ops/s
+# Warmup Iteration   4: 8.717 ops/s
+# Warmup Iteration   5: 8.718 ops/s
+Iteration   1: 8.715 ops/s
+Iteration   2: 8.711 ops/s
+Iteration   3: 8.720 ops/s
+Iteration   4: 8.712 ops/s
+Iteration   5: 8.719 ops/s
+
+# Run progress: 58.00% complete, ETA 00:36:47
+# Fork: 5 of 5
+# Warmup Iteration   1: 8.324 ops/s
+# Warmup Iteration   2: 8.717 ops/s
+# Warmup Iteration   3: 8.715 ops/s
+# Warmup Iteration   4: 8.706 ops/s
+# Warmup Iteration   5: 8.720 ops/s
+Iteration   1: 8.721 ops/s
+Iteration   2: 8.711 ops/s
+Iteration   3: 8.724 ops/s
+Iteration   4: 8.709 ops/s
+Iteration   5: 8.706 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.writeTo08New":
+  8.715 ±(99.9%) 0.006 ops/s [Average]
+  (min, avg, max) = (8.699, 8.715, 8.727), stdev = 0.008
+  CI (99.9%): [8.710, 8.721] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.writeTo16New
+# Parameters: (type = large)
+
+# Run progress: 60.00% complete, ETA 00:35:03
+# Fork: 1 of 5
+# Warmup Iteration   1: 12.515 ops/s
+# Warmup Iteration   2: 13.890 ops/s
+# Warmup Iteration   3: 13.968 ops/s
+# Warmup Iteration   4: 13.967 ops/s
+# Warmup Iteration   5: 13.965 ops/s
+Iteration   1: 13.984 ops/s
+Iteration   2: 13.953 ops/s
+Iteration   3: 13.939 ops/s
+Iteration   4: 13.950 ops/s
+Iteration   5: 13.935 ops/s
+
+# Run progress: 62.00% complete, ETA 00:33:18
+# Fork: 2 of 5
+# Warmup Iteration   1: 12.525 ops/s
+# Warmup Iteration   2: 13.916 ops/s
+# Warmup Iteration   3: 13.976 ops/s
+# Warmup Iteration   4: 13.977 ops/s
+# Warmup Iteration   5: 13.959 ops/s
+Iteration   1: 13.962 ops/s
+Iteration   2: 13.956 ops/s
+Iteration   3: 13.954 ops/s
+Iteration   4: 13.945 ops/s
+Iteration   5: 13.970 ops/s
+
+# Run progress: 64.00% complete, ETA 00:31:32
+# Fork: 3 of 5
+# Warmup Iteration   1: 12.528 ops/s
+# Warmup Iteration   2: 13.884 ops/s
+# Warmup Iteration   3: 13.972 ops/s
+# Warmup Iteration   4: 13.954 ops/s
+# Warmup Iteration   5: 13.968 ops/s
+Iteration   1: 13.980 ops/s
+Iteration   2: 13.933 ops/s
+Iteration   3: 13.970 ops/s
+Iteration   4: 13.969 ops/s
+Iteration   5: 13.982 ops/s
+
+# Run progress: 66.00% complete, ETA 00:29:47
+# Fork: 4 of 5
+# Warmup Iteration   1: 12.562 ops/s
+# Warmup Iteration   2: 13.923 ops/s
+# Warmup Iteration   3: 13.960 ops/s
+# Warmup Iteration   4: 13.957 ops/s
+# Warmup Iteration   5: 13.965 ops/s
+Iteration   1: 13.951 ops/s
+Iteration   2: 14.003 ops/s
+Iteration   3: 13.965 ops/s
+Iteration   4: 13.950 ops/s
+Iteration   5: 13.970 ops/s
+
+# Run progress: 68.00% complete, ETA 00:28:02
+# Fork: 5 of 5
+# Warmup Iteration   1: 12.482 ops/s
+# Warmup Iteration   2: 13.902 ops/s
+# Warmup Iteration   3: 13.990 ops/s
+# Warmup Iteration   4: 13.940 ops/s
+# Warmup Iteration   5: 14.000 ops/s
+Iteration   1: 13.984 ops/s
+Iteration   2: 13.946 ops/s
+Iteration   3: 13.956 ops/s
+Iteration   4: 13.955 ops/s
+Iteration   5: 13.925 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.writeTo16New":
+  13.959 ±(99.9%) 0.014 ops/s [Average]
+  (min, avg, max) = (13.925, 13.959, 14.003), stdev = 0.018
+  CI (99.9%): [13.946, 13.973] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.writeTo16Old
+# Parameters: (type = large)
+
+# Run progress: 70.00% complete, ETA 00:26:17
+# Fork: 1 of 5
+# Warmup Iteration   1: 9.316 ops/s
+# Warmup Iteration   2: 9.788 ops/s
+# Warmup Iteration   3: 9.803 ops/s
+# Warmup Iteration   4: 9.798 ops/s
+# Warmup Iteration   5: 9.798 ops/s
+Iteration   1: 9.799 ops/s
+Iteration   2: 9.793 ops/s
+Iteration   3: 9.791 ops/s
+Iteration   4: 9.807 ops/s
+Iteration   5: 9.801 ops/s
+
+# Run progress: 72.00% complete, ETA 00:24:31
+# Fork: 2 of 5
+# Warmup Iteration   1: 9.307 ops/s
+# Warmup Iteration   2: 9.803 ops/s
+# Warmup Iteration   3: 9.791 ops/s
+# Warmup Iteration   4: 9.803 ops/s
+# Warmup Iteration   5: 9.810 ops/s
+Iteration   1: 9.788 ops/s
+Iteration   2: 9.792 ops/s
+Iteration   3: 9.801 ops/s
+Iteration   4: 9.793 ops/s
+Iteration   5: 9.799 ops/s
+
+# Run progress: 74.00% complete, ETA 00:22:46
+# Fork: 3 of 5
+# Warmup Iteration   1: 9.292 ops/s
+# Warmup Iteration   2: 9.795 ops/s
+# Warmup Iteration   3: 9.790 ops/s
+# Warmup Iteration   4: 9.784 ops/s
+# Warmup Iteration   5: 9.797 ops/s
+Iteration   1: 9.799 ops/s
+Iteration   2: 9.786 ops/s
+Iteration   3: 9.799 ops/s
+Iteration   4: 9.788 ops/s
+Iteration   5: 9.786 ops/s
+
+# Run progress: 76.00% complete, ETA 00:21:01
+# Fork: 4 of 5
+# Warmup Iteration   1: 9.513 ops/s
+# Warmup Iteration   2: 10.000 ops/s
+# Warmup Iteration   3: 10.017 ops/s
+# Warmup Iteration   4: 10.013 ops/s
+# Warmup Iteration   5: 10.015 ops/s
+Iteration   1: 10.021 ops/s
+Iteration   2: 10.022 ops/s
+Iteration   3: 10.009 ops/s
+Iteration   4: 10.020 ops/s
+Iteration   5: 10.012 ops/s
+
+# Run progress: 78.00% complete, ETA 00:19:16
+# Fork: 5 of 5
+# Warmup Iteration   1: 9.474 ops/s
+# Warmup Iteration   2: 10.002 ops/s
+# Warmup Iteration   3: 10.003 ops/s
+# Warmup Iteration   4: 9.991 ops/s
+# Warmup Iteration   5: 10.011 ops/s
+Iteration   1: 9.990 ops/s
+Iteration   2: 10.006 ops/s
+Iteration   3: 10.008 ops/s
+Iteration   4: 10.003 ops/s
+Iteration   5: 10.012 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.writeTo16Old":
+  9.881 ±(99.9%) 0.081 ops/s [Average]
+  (min, avg, max) = (9.786, 9.881, 10.022), stdev = 0.108
+  CI (99.9%): [9.800, 9.962] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.writeTo32New
+# Parameters: (type = large)
+
+# Run progress: 80.00% complete, ETA 00:17:31
+# Fork: 1 of 5
+# Warmup Iteration   1: 86.271 ops/s
+# Warmup Iteration   2: 95.113 ops/s
+# Warmup Iteration   3: 95.407 ops/s
+# Warmup Iteration   4: 95.475 ops/s
+# Warmup Iteration   5: 95.319 ops/s
+Iteration   1: 95.464 ops/s
+Iteration   2: 95.406 ops/s
+Iteration   3: 95.363 ops/s
+Iteration   4: 95.340 ops/s
+Iteration   5: 95.211 ops/s
+
+# Run progress: 82.00% complete, ETA 00:15:46
+# Fork: 2 of 5
+# Warmup Iteration   1: 87.959 ops/s
+# Warmup Iteration   2: 95.715 ops/s
+# Warmup Iteration   3: 95.457 ops/s
+# Warmup Iteration   4: 95.723 ops/s
+# Warmup Iteration   5: 95.858 ops/s
+Iteration   1: 95.620 ops/s
+Iteration   2: 95.793 ops/s
+Iteration   3: 95.749 ops/s
+Iteration   4: 95.460 ops/s
+Iteration   5: 95.748 ops/s
+
+# Run progress: 84.00% complete, ETA 00:14:00
+# Fork: 3 of 5
+# Warmup Iteration   1: 87.529 ops/s
+# Warmup Iteration   2: 95.495 ops/s
+# Warmup Iteration   3: 95.481 ops/s
+# Warmup Iteration   4: 95.198 ops/s
+# Warmup Iteration   5: 95.442 ops/s
+Iteration   1: 95.528 ops/s
+Iteration   2: 95.391 ops/s
+Iteration   3: 95.509 ops/s
+Iteration   4: 95.416 ops/s
+Iteration   5: 95.294 ops/s
+
+# Run progress: 86.00% complete, ETA 00:12:15
+# Fork: 4 of 5
+# Warmup Iteration   1: 86.844 ops/s
+# Warmup Iteration   2: 95.713 ops/s
+# Warmup Iteration   3: 95.865 ops/s
+# Warmup Iteration   4: 95.872 ops/s
+# Warmup Iteration   5: 95.724 ops/s
+Iteration   1: 95.774 ops/s
+Iteration   2: 95.857 ops/s
+Iteration   3: 95.732 ops/s
+Iteration   4: 95.881 ops/s
+Iteration   5: 95.954 ops/s
+
+# Run progress: 88.00% complete, ETA 00:10:30
+# Fork: 5 of 5
+# Warmup Iteration   1: 87.170 ops/s
+# Warmup Iteration   2: 94.977 ops/s
+# Warmup Iteration   3: 94.780 ops/s
+# Warmup Iteration   4: 94.886 ops/s
+# Warmup Iteration   5: 94.913 ops/s
+Iteration   1: 94.792 ops/s
+Iteration   2: 94.855 ops/s
+Iteration   3: 95.018 ops/s
+Iteration   4: 94.839 ops/s
+Iteration   5: 94.970 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.writeTo32New":
+  95.439 ±(99.9%) 0.256 ops/s [Average]
+  (min, avg, max) = (94.792, 95.439, 95.954), stdev = 0.342
+  CI (99.9%): [95.182, 95.695] (assumes normal distribution)
+
+
+# JMH version: 1.23
+# VM version: JDK 11.0.7, OpenJDK Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1
+# VM invoker: /usr/lib/jvm/java-11-openjdk-armhf/bin/java
+# VM options: <none>
+# Warmup: 5 iterations, 10 s each
+# Measurement: 5 iterations, 10 s each
+# Timeout: 10 min per iteration
+# Threads: 1 thread, will synchronize iterations
+# Benchmark mode: Throughput, ops/time
+# Benchmark: com.sun.glass.ui.monocle.Benchmarks.writeTo32Old
+# Parameters: (type = large)
+
+# Run progress: 90.00% complete, ETA 00:08:45
+# Fork: 1 of 5
+# Warmup Iteration   1: 87.484 ops/s
+# Warmup Iteration   2: 95.172 ops/s
+# Warmup Iteration   3: 95.296 ops/s
+# Warmup Iteration   4: 95.357 ops/s
+# Warmup Iteration   5: 95.228 ops/s
+Iteration   1: 95.426 ops/s
+Iteration   2: 95.321 ops/s
+Iteration   3: 95.460 ops/s
+Iteration   4: 95.418 ops/s
+Iteration   5: 95.273 ops/s
+
+# Run progress: 92.00% complete, ETA 00:07:00
+# Fork: 2 of 5
+# Warmup Iteration   1: 86.040 ops/s
+# Warmup Iteration   2: 94.876 ops/s
+# Warmup Iteration   3: 94.814 ops/s
+# Warmup Iteration   4: 94.822 ops/s
+# Warmup Iteration   5: 94.961 ops/s
+Iteration   1: 94.779 ops/s
+Iteration   2: 94.962 ops/s
+Iteration   3: 94.855 ops/s
+Iteration   4: 94.807 ops/s
+Iteration   5: 94.831 ops/s
+
+# Run progress: 94.00% complete, ETA 00:05:15
+# Fork: 3 of 5
+# Warmup Iteration   1: 85.968 ops/s
+# Warmup Iteration   2: 95.156 ops/s
+# Warmup Iteration   3: 95.145 ops/s
+# Warmup Iteration   4: 95.026 ops/s
+# Warmup Iteration   5: 95.138 ops/s
+Iteration   1: 95.109 ops/s
+Iteration   2: 95.014 ops/s
+Iteration   3: 95.137 ops/s
+Iteration   4: 95.152 ops/s
+Iteration   5: 94.983 ops/s
+
+# Run progress: 96.00% complete, ETA 00:03:30
+# Fork: 4 of 5
+# Warmup Iteration   1: 86.328 ops/s
+# Warmup Iteration   2: 95.109 ops/s
+# Warmup Iteration   3: 95.292 ops/s
+# Warmup Iteration   4: 95.279 ops/s
+# Warmup Iteration   5: 95.087 ops/s
+Iteration   1: 95.283 ops/s
+Iteration   2: 95.232 ops/s
+Iteration   3: 95.150 ops/s
+Iteration   4: 95.227 ops/s
+Iteration   5: 95.287 ops/s
+
+# Run progress: 98.00% complete, ETA 00:01:45
+# Fork: 5 of 5
+# Warmup Iteration   1: 86.328 ops/s
+# Warmup Iteration   2: 95.266 ops/s
+# Warmup Iteration   3: 95.030 ops/s
+# Warmup Iteration   4: 95.345 ops/s
+# Warmup Iteration   5: 95.325 ops/s
+Iteration   1: 95.149 ops/s
+Iteration   2: 95.328 ops/s
+Iteration   3: 95.344 ops/s
+Iteration   4: 95.052 ops/s
+Iteration   5: 95.354 ops/s
+
+
+Result "com.sun.glass.ui.monocle.Benchmarks.writeTo32Old":
+  95.157 ±(99.9%) 0.152 ops/s [Average]
+  (min, avg, max) = (94.779, 95.157, 95.460), stdev = 0.202
+  CI (99.9%): [95.006, 95.309] (assumes normal distribution)
+
+
+# Run complete. Total time: 01:27:31
+
+REMEMBER: The numbers below are just data. To gain reusable insights, you need to follow up on
+why the numbers are the way they are. Use profilers (see -prof, -lprof), design factorial
+experiments, perform baseline and negative tests that provide experimental control, make sure
+the benchmarking environment is safe on JVM/OS/HW level, ask for reviews from the domain experts.
+Do not assume the numbers tell you what you want them to tell.
+
+Benchmark                (type)   Mode  Cnt    Score   Error  Units
+Benchmarks.copyTo08New    large  thrpt   25    9.656 ± 0.021  ops/s
+Benchmarks.copyTo16New    large  thrpt   25   12.812 ± 1.104  ops/s
+Benchmarks.copyTo16Old    large  thrpt   25   10.123 ± 0.090  ops/s
+Benchmarks.copyTo32New    large  thrpt   25   98.220 ± 9.977  ops/s
+Benchmarks.copyTo32Old    large  thrpt   25  100.072 ± 8.332  ops/s
+Benchmarks.writeTo08New   large  thrpt   25    8.715 ± 0.006  ops/s
+Benchmarks.writeTo16New   large  thrpt   25   13.959 ± 0.014  ops/s
+Benchmarks.writeTo16Old   large  thrpt   25    9.881 ± 0.081  ops/s
+Benchmarks.writeTo32New   large  thrpt   25   95.439 ± 0.256  ops/s
+Benchmarks.writeTo32Old   large  thrpt   25   95.157 ± 0.152  ops/s

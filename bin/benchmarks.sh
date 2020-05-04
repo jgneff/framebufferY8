@@ -11,6 +11,8 @@ jarfile=target/benchmarks.jar
 
 # Ubuntu builds
 ubuntu11=/usr/lib/jvm/java-11-openjdk-$arch
+ubuntu13=/usr/lib/jvm/java-13-openjdk-$arch
+ubuntu14=/usr/lib/jvm/java-14-openjdk-$arch
 
 # Oracle builds
 oracle14=$HOME/opt/jdk-14.0.1
@@ -30,7 +32,7 @@ filter=''
 # Examples: -f 1 -i 1 -wi 1 -p type=large
 jmhflags='-p type=large'
 
-jdklist="$adopt11 $adopt12 $adopt13 $adopt14"
+jdklist="$ubuntu11 $ubuntu13 $ubuntu14 $adopt11 $adopt13 $adopt14"
 for jdk in $jdklist; do
     printf "\n[$(date)] Testing $jdk ...\n"
     $jdk/bin/java -version

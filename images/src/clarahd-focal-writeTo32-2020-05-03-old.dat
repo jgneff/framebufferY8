@@ -1,0 +1,7 @@
+Benchmark   (type)   Mode  Cnt   Score X Error  Units
+UbuntuJDK11  large  thrpt   25  95.157 ± 0.152  ops/s
+UbuntuJDK13  large  thrpt   25  29.757 ± 0.171  ops/s
+UbuntuJDK14  large  thrpt   25  90.389 ± 0.423  ops/s
+AdoptJDK11   large  thrpt   25  94.355 ± 0.171  ops/s
+AdoptJDK13   large  thrpt   25  29.612 ± 0.077  ops/s
+AdoptJDK14   large  thrpt   25  88.825 ± 0.611  ops/s

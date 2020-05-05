@@ -14,7 +14,7 @@ These classes are part of the Monocle implementation of the Glass windowing comp
 
 The results of my third round of tests in May 2020 are published on the [2020-05](2020-05/) page.
 
-This round of tests confirms what I saw in the results last month: JDK 13 on ARM processors had a remarkable drop in performance that has [mostly returned](2020-05/#writeto16newold) in the latest release of JDK 14.
+This round of tests confirmed what I saw in the test results last month: JDK 13 on ARM processors had a remarkable drop in performance that has [mostly returned](2020-05/#writeto16newold) in the latest release of JDK 14.
 
 ![Bar Chart](2020-05/clarahd-focal-writeTo16-2020-05-03.svg){:width="716" height="410"}
 
@@ -26,6 +26,19 @@ This round of tests confirms what I saw in the results last month: JDK 13 on ARM
 | AdoptJDK13  | JDK 13.0.2, OpenJDK Server VM, 13.0.2+8 |
 | UbuntuJDK14 | JDK 14.0.1, OpenJDK Server VM, 14.0.1+7-Ubuntu-1ubuntu1 |
 | AdoptJDK14  | JDK 14.0.1, OpenJDK Server VM, 14.0.1+7 |
+
+For comparison, the chart below shows the performance of the [same method on an Intel Xeon processor](2020-05/#writeto16newold-1).
+
+![Bar Chart](2020-05/focal-focal-writeTo16-2020-05-04.svg){:width="716" height="410"}
+
+| Name        | VM Version |
+|-------------|------------|
+| UbuntuJDK11 | JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10-post-Ubuntu-3ubuntu1 |
+| AdoptJDK11  | JDK 11.0.7, OpenJDK 64-Bit Server VM, 11.0.7+10 |
+| UbuntuJDK13 | JDK 13.0.3, OpenJDK 64-Bit Server VM, 13.0.3+3-Ubuntu-1ubuntu2 |
+| AdoptJDK13  | JDK 13.0.2, OpenJDK 64-Bit Server VM, 13.0.2+8 |
+| UbuntuJDK14 | JDK 14.0.1, OpenJDK 64-Bit Server VM, 14.0.1+7-Ubuntu-1ubuntu1 |
+| AdoptJDK14  | JDK 14.0.1, OpenJDK 64-Bit Server VM, 14.0.1+7 |
 
 ## 2020-04
 

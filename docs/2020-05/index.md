@@ -30,6 +30,22 @@ The results of the benchmark tests are grouped by the processor, operating syste
 ##### writeTo32New/Old
 {% include results.md name="clarahd-focal-writeTo32-2020-05-03" width=716 height=410 %}
 
+### Intel Xeon Processor
+
+#### Ubuntu 20.04
+
+##### copyTo16New/Old
+{% include results.md name="focal-focal-copyTo16-2020-05-04" width=734 height=410 %}
+
+##### writeTo16New/Old
+{% include results.md name="focal-focal-writeTo16-2020-05-04" width=716 height=410 %}
+
+##### copyTo32New/Old
+{% include results.md name="focal-focal-copyTo32-2020-05-04" width=739 height=464 %}
+
+##### writeTo32New/Old
+{% include results.md name="focal-focal-writeTo32-2020-05-04" width=724 height=412 %}
+
 ## Benchmarks
 
 I ran the following command for the benchmark tests:
@@ -81,3 +97,25 @@ $ java -jar target/benchmarks.jar -p type=large
 
 ##### AdoptOpenJDK 14
 {% include results.md name="armfocal-focal-jdk-14.0.1+7-2020-05-03" width=702 height=412 %}
+
+### Intel Xeon Processor
+
+#### Ubuntu 20.04
+
+##### Ubuntu OpenJDK 11
+{% include results.md name="focal-focal-java-11-openjdk-amd64-2020-05-04" width=685 height=412 %}
+
+##### AdoptOpenJDK 11
+{% include results.md name="focal-focal-jdk-11.0.7+10-2020-05-04" width=685 height=412 %}
+
+##### Ubuntu OpenJDK 13
+{% include results.md name="focal-focal-java-13-openjdk-amd64-2020-05-04" width=685 height=412 %}
+
+##### AdoptOpenJDK 13
+{% include results.md name="focal-focal-jdk-13.0.2+8-2020-05-04" width=685 height=412 %}
+
+##### Ubuntu OpenJDK 14
+{% include results.md name="focal-focal-java-14-openjdk-amd64-2020-05-04" width=685 height=412 %}
+
+##### AdoptOpenJDK 14
+{% include results.md name="focal-focal-jdk-14.0.1+7-2020-05-04" width=708 height=412 %}

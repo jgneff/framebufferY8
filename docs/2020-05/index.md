@@ -36,7 +36,7 @@ The bars in the graphs are colored as follows:
 
 See also the [interactive flame graph](java-11-openjdk-armhf.svg) in SVG format.
 
-[![Ubuntu JDK 11 Frame Graph](java-11-openjdk-armhf-800x.png){:width="800" height="303"}](java-11-openjdk-armhf.svg)
+![Ubuntu JDK 11 Frame Graph](java-11-openjdk-armhf-800x.png){:width="800" height="303"}
 
 With JDK 11, almost all of the CPU usage is dedicated to the Java benchmark test:
 
@@ -52,7 +52,7 @@ $ top -H -b -n 3 | grep -A5 'PID USER'
 
 See also the [interactive flame graph](java-13-openjdk-armhf.svg) in SVG format.
 
-[![Ubuntu JDK 13 Frame Graph](java-13-openjdk-armhf-800x.png){:width="800" height="281"}](java-13-openjdk-armhf.svg)
+![Ubuntu JDK 13 Frame Graph](java-13-openjdk-armhf-800x.png){:width="800" height="281"}
 
 With JDK 13, the Java benchmark test is being crowded out by two threads labeled `Service Thread` and is able to get only about a third of the CPU usage:
 
@@ -80,7 +80,7 @@ Thank you, Aleksei!
 
 See also the [interactive flame graph](java-14-openjdk-armhf.svg) in SVG format.
 
-[![Ubuntu JDK 14 Frame Graph](java-14-openjdk-armhf-800x.png){:width="800" height="313"}](java-14-openjdk-armhf.svg)
+![Ubuntu JDK 14 Frame Graph](java-14-openjdk-armhf-800x.png){:width="800" height="313"}
 
 With JDK 14, as with JDK 11, almost all of the CPU usage is once again dedicated to the Java benchmark test:
 

@@ -7,8 +7,6 @@ description: JavaFX FramebufferY8 benchmark results from tests run in December 2
 # December 2019
 {:.no_toc}
 
-The results of the benchmark tests are grouped by the processor, operating system, and build of the Java Development Kit (JDK) on which they ran.
-
 * Generates table of contents as an unordered list
 {:toc}
 
@@ -31,6 +29,8 @@ One interesting anomaly I found is a large drop in performance of the tests unde
 {% include results.md name="armfocal-focal-copyTo16-2019-12-17" width=716 height=412 %}
 
 ## Benchmarks
+
+The results of the benchmark tests are grouped by the processor, operating system, and build of the Java Development Kit (JDK) on which they ran.
 
 I ran the following command on the ARM Cortex-A8 processor:
 

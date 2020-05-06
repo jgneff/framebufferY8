@@ -6,15 +6,20 @@ description: JavaFX benchmark results comparing the new FramebufferY8 class with
 
 # Benchmarks
 
-This is the website for the [JavaFX FramebufferY8 Benchmarks](https://github.com/jgneff/framebufferY8) repository.
+This is the website of the [JavaFX FramebufferY8 Benchmarks](https://github.com/jgneff/framebufferY8) repository.
 This site documents the results of the benchmark tests comparing the new `FramebufferY8` class with the old `Framebuffer` class.
 These classes are part of the Monocle implementation of the Glass windowing component in the JavaFX Graphics module.
+
+The purpose of the benchmarks is to show that we can replace the methods in the `Framebuffer` superclass with those of its `FramebufferY8` subclass and eliminate the subclass entirely.
+The results of the benchmarks also show a performance problem in JDK 13 on ARM processors, which is described below.
+
+I have done three rounds of tests, denoted by the month they were started: [2020-05](2020-05/), [2020-04](2020-04/), and [2019-12](2019-12/).
 
 ## 2020-05
 
 The results of my third round of tests in May 2020 are published on the [2020-05](2020-05/) page.
 
-This round of tests confirmed what I saw in the test results last month: JDK 13 on ARM processors had a remarkable drop in performance that has [mostly returned](2020-05/#writeto16newold) in the latest release of JDK 14.
+This round of tests confirmed what I saw in April: JDK 13 on ARM processors had a remarkable drop in performance that has [mostly returned](2020-05/#writeto16newold) in the latest release of JDK 14.
 
 ![Bar Chart](2020-05/clarahd-focal-writeTo16-2020-05-03.svg){:width="716" height="410"}
 
@@ -40,11 +45,15 @@ For comparison, the chart below shows the performance of the [same method on an 
 | UbuntuJDK14 | JDK 14.0.1, OpenJDK 64-Bit Server VM, 14.0.1+7-Ubuntu-1ubuntu1 |
 | AdoptJDK14  | JDK 14.0.1, OpenJDK 64-Bit Server VM, 14.0.1+7 |
 
+The flame graph below helped me [figure out the cause](2020-05/#jdk-13-performance) of the performance drop on ARM.
+
+![Ubuntu JDK 13 Frame Graph](2020-05/java-13-openjdk-armhf-800x.png){:width="800" height="281"}
+
 ## 2020-04
 
 The results of my second round of tests in April 2020 are published on the [2020-04](2020-04/) page.
 
-The most interesting result was the [apparent fix in JDK 14.0.1](2020-04/#writeto16newold) for the performance problem seen last time, shown by the following graph of Ubuntu 20.04 on a 32-bit QEMU ARM virtual machine.
+The most interesting result was [the apparent fix](2020-04/#writeto16newold) in JDK 14.0.1 for the performance problem I saw in December, shown by the following graph of Ubuntu 20.04 on a 32-bit QEMU ARM virtual machine.
 
 ![Bar Chart](2020-04/armfocal-focal-writeTo16-2020-04-27.svg){:width="713" height="412"}
 

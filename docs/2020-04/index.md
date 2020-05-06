@@ -7,8 +7,6 @@ description: JavaFX FramebufferY8 benchmark results from tests run in April 2020
 # April 2020
 {:.no_toc}
 
-The results of the benchmark tests are grouped by the processor, operating system, and build of the Java Development Kit (JDK) on which they ran.
-
 * Generates table of contents as an unordered list
 {:toc}
 
@@ -45,6 +43,8 @@ Notice that the performance on an Intel Xeon processor is very different from th
 {% include results.md name="focal-focal-writeTo32-2020-04-28" width=727 height=412 %}
 
 ## Benchmarks
+
+The results of the benchmark tests are grouped by the processor, operating system, and build of the Java Development Kit (JDK) on which they ran.
 
 I ran the following command for the benchmark tests:
 

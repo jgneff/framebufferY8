@@ -20,7 +20,7 @@ The performance has since been restored in the latest release of JDK 14, as seen
 
 ![Bar Chart](clarahd-focal-writeTo16-2020-05-03.svg){:width="716" height="410"}
 
-I was able to narrow down the source of the problem with the [async-profiler](https://github.com/jvm-profiling-tools/async-profiler) tool.
+The [async-profiler](https://github.com/jvm-profiling-tools/async-profiler) tool helped me identify the source of the problem.
 I ran the profiler for 30 seconds during iterations of the `writeTo16New` benchmark test on an ARM Cortex-A9 device.
 The three [flame graphs](https://github.com/BrendanGregg/FlameGraph) below clearly show the difference between the faster JDK versions 11 and 14 and the slower JDK 13.
 The bars in the graphs are colored as follows:

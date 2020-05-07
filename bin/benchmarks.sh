@@ -7,6 +7,8 @@ host=$(hostname --short)
 code=$(lsb_release --short --codename)
 arch=$(dpkg --print-architecture)
 date=$(date --iso-8601)
+
+# Benchmark application
 jarfile=target/benchmarks.jar
 
 # Ubuntu builds
@@ -23,20 +25,24 @@ adopt12=$HOME/opt/jdk-12.0.2+10
 adopt13=$HOME/opt/jdk-13.0.2+8
 adopt14=$HOME/opt/jdk-14.0.1+7
 
-# Examples: -verbose:gc -Xlog:gc* -XX:+PrintCompilation
-jvmflags=''
-
 # Example: writeTo..New
-filter=''
+filters=""
 
-# Examples: -f 1 -i 1 -wi 1 -p type=large
-jmhflags='-p type=large'
+# Example: -f 1 -i 1 -wi 1 -r 60s -w 30s -p type=large
+options="-p type=large"
+
+# Example: -verbose:gc -Xlog:gc* -XX:+PrintCompilation
+# Example: -XX:+UnlockDiagnosticVMOptions -XX:+PrintInlining -XX:+LogCompilation
+# Example: -XX:StartFlightRecording=settings=profile,filename=profile.jfr
+# Example: -agentpath:/path/to/libasyncProfiler.so=start,file=profile.svg
+jvmargs=""
 
 jdklist="$ubuntu11 $ubuntu13 $ubuntu14 $adopt11 $adopt13 $adopt14"
 for jdk in $jdklist; do
     printf "\n[$(date)] Testing $jdk ...\n"
     $jdk/bin/java -version
-    logfile=${host}-${code}-$(basename $jdk)-${date}.log
-    time $jdk/bin/java $jvmflags -jar $jarfile $filter $jmhflags -o $logfile
-    grep "^Benchmarks" $logfile
+    jdkbase=$(basename $jdk)
+    logfile=${host}-${code}-${jdkbase}-${date}.log
+    time $jdk/bin/java -jar $jarfile $filters $options -o $logfile \
+        -jvmArgs "$jvmargs"
 done

@@ -25,12 +25,12 @@ I ran the profiler for 30 seconds during iterations of the `writeTo16New` benchm
 The three [flame graphs](https://github.com/BrendanGregg/FlameGraph) below clearly show the difference between the faster JDK versions 11 and 14 and the slower JDK 13.
 The bars in the graphs are colored as follows:
 
-| Color  | Code |
-|--------|------|
-| Green  | Java source code |
-| Yellow | C++ source code |
-| Red    | Native code in user space |
-| Orange | Native code in kernel space |
+| Color  | Stack Frame |
+|--------|-------------|
+| Green  | Java methods |
+| Yellow | C++ functions |
+| Red    | Other user-mode functions |
+| Orange | Kernel-mode functions |
 
 ### Ubuntu JDK 11
 

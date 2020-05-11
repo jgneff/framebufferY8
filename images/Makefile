@@ -27,7 +27,7 @@ LATEXMK  = latexmk
 EXIFTOOL = exiftool
 MUDRAW   = mudraw
 OPTIPNG  = optipng
-INKSCAPE = /snap/inkscape/current/bin/inkscape
+INKSCAPE = /snap/bin/inkscape
 CLEANER  = $(HOME)/opt/svgcleaner-0.9.5/svgcleaner
 RSYNC    = rsync
 
@@ -142,7 +142,7 @@ out/%.png: tmp/%.png metadata.xmp
 	$(OPTIPNG) $(OPTIPNG_OPTS) $@
 
 tmp/%.svg: out/%.pdf
-	$(INKSCAPE) --export-plain-svg=$@ $<
+	$(INKSCAPE) --export-plain-svg --export-filename=$@ $<
 
 tmp/%-clean.svg: tmp/%.svg
 	$(CLEANER) $(CLEANER_OPTS) $< $@

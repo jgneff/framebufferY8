@@ -1,6 +1,7 @@
 {% if include.name contains "jdk" %}[Log File](https://github.com/jgneff/framebufferY8/blob/master/logs/{{ include.name }}.log) • {% endif %}
 [PNG Chart]({{ include.name }}.png) •
-[SVG Chart]({{ include.name }}.svg)
+[SVG Chart]({{ include.name }}.svg) •
+[PDF Chart]({{ include.name }}.pdf)
 
 ![Bar Chart]({{ include.name }}.svg){:width="{{ include.width }}" height="{{ include.height }}"}
 

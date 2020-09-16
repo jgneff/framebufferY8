@@ -25,9 +25,9 @@ webdir = ../docs
 # Commands
 LATEXMK  = latexmk
 EXIFTOOL = exiftool
-MUDRAW   = mudraw
+MUDRAW   = mutool draw
 OPTIPNG  = optipng
-INKSCAPE = /snap/bin/inkscape
+INKSCAPE = inkscape
 CLEANER  = $(HOME)/opt/svgcleaner-0.9.5/svgcleaner
 RSYNC    = rsync
 
@@ -35,11 +35,12 @@ RSYNC    = rsync
 LATEXMK_OPTS = -lualatex
 MUDRAW_OPTS  = -r 96 -c rgb
 OPTIPNG_OPTS = -quiet
-CLEANER_OPTS = --indent=0
+CLEANER_OPTS = --indent=0 --remove-declarations=no
 RSYNC_OPTS   = --archive --verbose --checksum --ignore-missing-args
 
-# ExifTool options to list the XMP metadata
-exif_xmp := -xmp:all -groupNames1 -veryShort -duplicates
+# ExifTool options to list the Creative Commons license metadata
+exif_xmp := -XMP-cc:all -XMP-dc:all -XMP-xmpRights:all \
+    -groupNames1 -veryShort -duplicates
 
 # Grep patterns for the benchmark results from the log files
 results     := -e "^Benchmark"
@@ -53,11 +54,8 @@ sed_log += -e "s/Score[ ]*Error/Score x Error/"
 sed_new := -e "s/New /    /"
 sed_old := -e "s/Old /    /"
 
-# Sed scripts to add an XML declaration and font stack to the SVG files
-# The XML declaration prevents "Error: File format error" in ExifTool 10.10,
-# fixed in 11.66 (https://exiftool.org/forum/index.php?topic=10456.0).
-sed_svg := -e '1 i <?xml version="1.0" encoding="UTF-8"?>'
-sed_svg += -e "s/Arimo/Arimo,Liberation Sans,Arial,sans-serif/g"
+# Sed script to add font stack to the SVG files
+sed_svg := -e "s/Arimo/Arimo,Liberation Sans,Arial,sans-serif/g"
 
 # Sed scripts to create Markdown pipe tables from the log files
 header    := :---------|-------:|-----:|----:|------:|---|------:|-----:
@@ -142,7 +140,7 @@ out/%.png: tmp/%.png metadata.xmp
 	$(OPTIPNG) $(OPTIPNG_OPTS) $@
 
 tmp/%.svg: out/%.pdf
-	$(INKSCAPE) --export-plain-svg --export-filename=$@ $<
+	$(INKSCAPE) --export-plain-svg=$@ $<
 
 tmp/%-clean.svg: tmp/%.svg
 	$(CLEANER) $(CLEANER_OPTS) $< $@

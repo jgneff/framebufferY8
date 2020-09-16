@@ -25,7 +25,7 @@ The [anomalies in performance](../2019-12/#anomalies) that I found in December 2
 {% include results.md name="armfocal-focal-writeTo16-2020-04-27" width=713 height=412 %}
 
 ##### copyTo32New/Old
-{% include results.md name="armfocal-focal-copyTo32-2020-04-27" width=722 height=413 %}
+{% include results.md name="armfocal-focal-copyTo32-2020-04-27" width=722 height=412 %}
 
 ##### writeto32New/Old
 {% include results.md name="armfocal-focal-writeTo32-2020-04-27" width=709 height=412 %}

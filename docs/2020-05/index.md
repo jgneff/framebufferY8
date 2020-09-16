@@ -144,7 +144,7 @@ $ java -jar target/benchmarks.jar -p type=large
 {% include results.md name="clarahd-focal-java-11-openjdk-armhf-2020-05-03" width=685 height=410 %}
 
 ##### AdoptOpenJDK 11
-{% include results.md name="clarahd-focal-jdk-11.0.7+10-2020-05-03" width=703 height=409 %}
+{% include results.md name="clarahd-focal-jdk-11.0.7+10-2020-05-03" width=703 height=410 %}
 
 ##### Ubuntu OpenJDK 13
 {% include results.md name="clarahd-focal-java-13-openjdk-armhf-2020-05-03" width=685 height=410 %}
@@ -169,7 +169,7 @@ $ java -jar target/benchmarks.jar -p type=large
 {% include results.md name="armfocal-focal-jdk-11.0.7+10-2020-05-03" width=685 height=412 %}
 
 ##### Ubuntu OpenJDK 13
-{% include results.md name="armfocal-focal-java-13-openjdk-armhf-2020-05-03" width=699 height=413 %}
+{% include results.md name="armfocal-focal-java-13-openjdk-armhf-2020-05-03" width=699 height=412 %}
 
 ##### AdoptOpenJDK 13
 {% include results.md name="armfocal-focal-jdk-13.0.2+8-2020-05-03" width=687 height=412 %}
